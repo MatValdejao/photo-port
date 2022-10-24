@@ -1,9 +1,10 @@
 import React from "react";
-import About from "./components/About"
-import Nav from "./components/Nav"
+import "./index.css";
+import About from "./components/About";
+import Nav from "./components/Nav";
 
 function App() {
-  return (
+	return (
 		<div>
 			<Nav></Nav>
 			<main>

@@ -4,6 +4,11 @@ function categorySelected(name) {
 	console.log(`${name} clicked`);
 }
 
+function ucfirst(str) {
+	var firstLetter = str.substr(0, 1);
+	return firstLetter.toUpperCase() + str.substr(1);
+}
+
 function Nav() {
 	const categories = [
 		{
@@ -40,7 +45,7 @@ function Nav() {
 					{categories.map((category) => (
 						<li className="mx-1" key={category.name}>
 							<span onClick={() => categorySelected(category.name)}>
-								{category.name}
+								{ucfirst(category.name)}
 							</span>
 						</li>
 					))}
