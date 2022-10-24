@@ -7,15 +7,14 @@ afterEach(cleanup);
 
 describe(
 	"About component",
-	() => {
-		// First Test
-		it("renders", () => {
-			render(<About />);
-		});
-	},
-	it("matches snapshot DOM node structure", () => {
-		// render about
-		const { asFragment } = render(<About />);
-		expect(asFragment()).toMatchSnapshot();
-	})
-);
+    () => {
+        // First Test
+        it("renders", () => {
+            render(<About />);
+        });
+        it("matches snapshot DOM node structure", () => {
+            // render about
+            const { asFragment } = render(<About />);
+            expect(asFragment()).toMatchSnapshot();
+        })
+    });
