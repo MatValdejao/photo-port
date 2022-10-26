@@ -12,7 +12,6 @@ const currentPhoto = {
 };
 
 const mockToggleModal = jest.fn();
-const setMockToggleModal = jest.fn();
 
 afterEach(cleanup);
 
